@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATURALS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="sedan-regular">NATURALS</h1>
+    </header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYlKC0XGrGvPEf4h10TpWNQwXlGiVWgmco_bIk4p05Jg&s" height="400" width="500" class="center">
+</section><br>
+<section class="salon">
+    <P>Naturals was conceived with the idea of the modern Indian.has made a path-breaking change in the way the beauty industry has been perceived. Founded by K. Veena, whose knowledge of the international beauty industry pioneered a new era in the hair and beauty care industry in India</P>
+   
+</section>
+    <section class="salon">
+        <h3>Our Services</h3><BR>
+        <label for="service">Choose a Service:</label>
+        <select id="service">
+            <option value="spa">Spa</option>
+            <option value="haircut">Haircut</option>
+            <option value="pedicure">Pedicure</option>
+            <option value="detan">Detan</option>
+            <option value="makeup">Makeup</option>
+        </select>
+        <br><br>
+        <button onclick="bookService()">Book Service</button>
+    </section>
+    <section class="salon">
+       <h3>Price Range<h3><BR>
+        <ul>
+            <li>Spa:500 to 5000</li>
+            <li>Haircut:600 to 1500</li>
+            <li>Pedicure:800 to 2500</li>
+            <li>Detan:500 to 2000</li>
+        </ul>
+
+       </section>
+    </section>
+    
+
+    <script>
+        function bookService() {
+            var selectedService = document.getElementById("service").value;
+            alert("Service booked: " + selectedService);
+            window.location.href = "payment.html";
+        }
+    </script>
+</body>
+</html>

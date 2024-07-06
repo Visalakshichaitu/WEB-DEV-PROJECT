@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V3 CARE HOUSE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="sedan-regular">V3 CARE HOUSE</h1>
+    </header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0mZaBYFOuA5j4u7ftLKZ0RMes_L42_AgATZrpjQkcOQ&s" class="center" width="400">
+</section><br><br>
+<section class="salon">
+    
+    <p>Welcome to V3 care. the best cleaning service provider from South India- Bangalore. We take great pride in offering all of our clients a reliable, trustworthy and affordable service. we’ve steadily grown and built a reputation for excellence.</p>
+</section>
+    <section class="salon">
+        <h3>Our Services</h3><br>
+        <label for="service">Choose a Service:</label>
+        <select id="service">
+            <option value="Home deep cleaning">Home deep cleaning</option><br>
+            <option value="Sofa shampooing">Sofa shampooing</option><br>
+            <option value="Bathroom cleaning">Bathroom cleaning</option><br>
+            <option value="Pest control">Pest control</option><br>
+            <option value="Matress cleaning">Matress cleaning</option><br>
+        </select>
+        <br><br>
+        <button onclick="bookService()">Book Service</button>
+    </section>
+    <section class="salon">
+       <h3>Price Range<h3><br>
+        <ul>
+            <li>Home deep cleaning:2500 to 5000</li>
+            <li>Sofa shampooing:900 to 3000</li>
+            <li>Bathroom Cleaning:800 to 2300</li>
+            <li>Pest control:1000 to 2000</li>
+            <li>Matress Cleaning:600 to 900</li>
+        </ul>
+
+       </section>
+    </section>
+    
+
+    <script>
+        function bookService() {
+            var selectedService = document.getElementById("service").value;
+            alert("Service booked: " + selectedService);
+            window.location.href = "payment.html";
+        }
+    </script>
+</body>
+</html>

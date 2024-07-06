@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVES24</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="sedan-regular">SERVES24</h1>
+    </header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJbgGsJbpC3ZwCRbCto8YzOZNM6aaJhhtGIZ_zyA5lmw&s" height="400" width="500" class="center">
+</section><br><br>
+<section class="salon">
+    <p>Serves24.com is Best Home Appliances Repair Services In Hyderabad fridge, Washing Machine, airconditioner, tv, geyser repair Service Center in Hyderabad Repair We Provided Door Step Repair And Service & Provide best in class. Get 6 months repair guarantee. Book Now just @249/-. at most affordable prices</p>
+    
+</section>
+    <section class="salon">
+        <h3>Our Services</h3><BR>
+        <label for="service">Choose a Service:</label>
+        <select id="service">
+            <option value="AC">AC</option>
+            <option value="Refrigerator">Refrigerator</option>
+            <option value="Fan">Fan</option>
+            <option value="Washing Machine">Washing Machine</option>
+            <option value="TV">TV</option>
+        </select>
+        <br><br>
+        <button onclick="bookService()">Book Service</button>
+    </section>
+    <section class="salon">
+       <h3>Price Range<h3><BR>
+        <ul>
+            <li>AC:500 to 3000</li>
+            <li>Refrigerator:600 to 1500</li>
+            <li>Fan:250 to 700</li>
+            <li>Washing Machine:600 to 1000</li>
+            <li>TV:1000 to 2500</li>
+        </ul>
+
+       </section>
+    </section>
+    
+
+    <script>
+        function bookService() {
+            var selectedService = document.getElementById("service").value;
+            alert("Service booked: " + selectedService);
+            window.location.href = "payment.html";
+        }
+    </script>
+</body>
+</html>

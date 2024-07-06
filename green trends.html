@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN TRENDS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="sedan-regular">GREEN TRENDS</h1>
+    </header>
+    <img src="https://content.jdmagicbox.com/comp/udumalpet/v9/9999p4252.4252.230829135004.w5v9/catalogue/green-trends-unisex-hair-and-style-salon-udamalpet-bazaar-udumalpet-beauty-parlours-ivopniamus.jpg" height="400" width="500" class="center">
+</section><br><br>
+<section class="salon">
+    
+   <P>Get styled by Green Trends, one of India's leading unisex salon chains with 375+ salons in 50+ cities. We offer personalized beauty & styling services delivered by the best certified experts, at a location near you.</P>
+</section>
+    <section class="salon">
+        <h3>Our Services</h3><BR>
+        <label for="service">Choose a Service:</label>
+        <select id="service">
+            <option value="spa">Spa</option>
+            <option value="haircut">Haircut</option>
+            <option value="pedicure">Pedicure</option>
+            <option value="detan">Detan</option>
+            <option value="makeup">Makeup</option>
+        </select>
+        <br><br>
+        <button onclick="bookService()">Book Service</button>
+    </section>
+    <section class="salon">
+       <h3>Price Range<h3><BR>
+        <ul>
+            <li>Spa:500 to 5000</li>
+            <li>Haircut:600 to 1500</li>
+            <li>Pedicure:800 to 2500</li>
+            <li>Detan:500 to 2000</li>
+        </ul>
+
+       </section>
+    </section>
+    
+
+    <script>
+        function bookService() {
+            var selectedService = document.getElementById("service").value;
+            alert("Service booked: " + selectedService);
+            window.location.href = "payment.html";
+        }
+    </script>
+</body>
+</html>

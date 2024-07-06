@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Page</title>
+  <link rel="stylesheet" href="helppage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="logoooo.png" alt="Logo">
+    </div>
+    <div id="nav-part2">
+      <h4><a href="login.html">Login/Signup</a></h4>
+      <h4><a href="hygiene_check.html">Hygiene check</a></h4>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="contact-form-container smaller">
+      <h3>Let's Get in Touch</h3>
+      <p class="text">
+        "Thank you for reaching out to us! Please fill out the form below with your details, and we'll get back to you as soon as possible. Your feedback is valuable to us. If you're interested in joining our team, please leave a message in the 'Message' section, and we'll reach out to you with further details. For any additional questions, please refer to our FAQs section below."
+      </p>
+      <div class="contact-info">
+      </div>
+      <form action="helpPage.php" method="post">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" class="input" id="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" class="input" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" class="input" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" class="input" id="message" ></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn">
+      </form>
+    </div>
+    <div class="faq-container smaller">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <button class="accordion">
+          What is Heavenly?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Heavenly is a leading online platform that provides a wide range of services, including plumbing services, painting services, spa services delivery, and more, all accessible through one app.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How does it work?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>Our service works by connecting you with skilled professionals in painting, plumbing, cleaning, spa, and carpentry services. Simply browse through our platform, select the service you need, specify your requirements, and schedule an appointment. Our professionals will then arrive at your location and provide the service you requested with efficiency and expertise.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">Do you provide spa services?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Yes, we offer spa services, including hot tub maintenance, spa cleaning, and water treatment services to keep your spa in optimal condition.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">What painting services do you offer?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>We offer a wide range of painting services, including interior painting, exterior painting, and specialty finishes.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How can I be a part of Heavenly?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>If you're interested in joining our team of professionals, we'd love to hear from you! Simply leave us a message through the contact form below expressing your interest in becoming a part of our service. Our team will review your application and get back to you with further details on the application process and potential opportunities available. We're always looking for talented individuals to join us in delivering exceptional services to our clients.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            Can I request a customized service package?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Absolutely! We understand that every client's needs are unique. Feel free to reach out to us with your specific requirements, and we'll work with you to create a customized service package tailored to your needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="helppage.js"></script>
+</body>
+</html>

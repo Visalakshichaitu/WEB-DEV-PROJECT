@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Search</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Cleaning Service Search</h1>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for salons...">
+            <button onclick="searchSalons()">Search</button>
+        </div>
+        <div class="service-container">
+            <div class="salon">
+                <h2>V3 CARE house</h2><br>
+                <p>Address: Miyapur, Hyderabad</p>
+                <p>Services: Residential Cleaning, Commercial Cleaning</p>
+                <p>Description: We make your space sparkle!</p>
+                <button><a href="v3 care house.html">Book Service</a></button>
+            </div>
+            <div class="salon">
+                <h2>Washtog</h2><br>
+                <p>Address:Banjara Hills,Hyderabad </p>
+                <p>Services: cleanliness is our first priority.</p>
+                <p>Description: Your fresh start begins with us!</p>
+                <button><a href="washtog.html">Book Service</a></button>
+            </div>
+            
+            <div class="salon">
+                <h2>SS-Home deep cleaning</h2><br>
+                <p>Address: Pragathi Nagar,Hyderabad</p>
+                <p>Services: Office Cleaning, Window Cleaning, Carpet Cleaning</p>
+                <p>Description: Say goodbye to dirt and stains!</p>
+                <button>Book Service</button>
+            </div>
+            
+            <div class="salon">
+                <h2>Vijay Home services</h2><br>
+                <p>Address: Kachiguda,Hyderabad</p>
+                <p>Services: Eco-Friendly Cleaning, Pet-Friendly Cleaning</p>
+                <p>Description: Cleaning with nature in mind!</p>
+                <button>Book Service</button>
+            </div>
+            
+            <div class="salon">
+                <h2>Happi Home cleaning</h2><br>
+                <p>Address: Kukatpally,Hyderabad</p>
+                <p>Services: Housekeeping, Laundry Services</p>
+                <p>Description: Providing top-notch care for your home!</p>
+                <button>Book Service</button>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <script>
+        function searchSalons() {
+            var input, filter, salons, salon, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            salons = document.getElementsByClassName('salon');
+            for (i = 0; i < salons.length; i++) {
+                salon = salons[i].getElementsByTagName('h2')[0];
+                txtValue = salon.textContent || salon.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    salons[i].style.display = '';
+                } else {
+                    salons[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+    
+    <footer>
+        <div class="social-icons">
+            <p><b>FOLLOW US ON</b></p><br>
+            <p><b> Heavenly@gmail.com </b></p><br>
+            <a href="#" class="icon instagram"></a>
+            <a href="#" class="icon twitter"></a>
+            <a href="#" class="icon facebook"></a>
+        </div>
+    </footer>
+</body>
+</html>

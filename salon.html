@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Salon Search</h1>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for salons...">
+            <button onclick="searchSalons()">Search</button>
+        </div>
+
+        <div class="salon-listings">
+            <div class="salon">
+                <h2>LAKME</h2>
+                <p>Address:Himayath Nagar, Hyderabad</p>
+                <p>Timings: Monday to Friday, 9:00 AM - 6:00 PM</p>
+                <p>Description:Perfect radiance</p>
+                <button><a href="lakme.html">Book Appointment</a></button>
+            </div>
+            
+            <div class="salon">
+                <h2>NATURALS</h2>
+                <p>Address: Kukatpally,Hyderabad</p>
+                <p>Timings: Monday to Saturday, 10:00 AM - 8:00 PM</p>
+                <p>the natural glow</p>
+                <button><a href ="naturals.html">Book Appointment</a></button>
+            </div>
+            <div class="salon">
+                <h2>FLAWLESS FINISH</h2>
+                <p>Address: Gachibowli,Hyderabad</p>
+                <p>Timings: Tuesday to Sunday, 11:00 AM - 7:00 PM</p>
+                <p>Description:one stop destination for flawless finish.</p>
+                <button>Book Appointment</button>
+            </div>
+            <div class="salon">
+                <h2>THE STYLE HUB</h2>
+                <p>Address: 101 Pine St, City, Country</p>
+                <p>Timings: Monday to Saturday, 9:30 AM - 5:30 PM</p>
+                <p>Description: Groove with your own style here</p>
+                <button>Book Appointment</button>
+            </div>
+            <div class="salon">
+                <h2>JAWED HABIB</h2>
+                <p>Address: 202 Maple St, City, Country</p>
+                <p>Timings: Wednesday to Sunday, 10:00 AM - 6:00 PM</p>
+                <p>Description: fresh look, new start</p>
+                <button>Book Appointment</button>
+            </div>
+            
+            
+        </div>
+  
+
+    <script>
+        function searchSalons() {
+            var input, filter, salons, salon, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            salons = document.getElementsByClassName('salon');
+            for (i = 0; i < salons.length; i++) {
+                salon = salons[i].getElementsByTagName('h2')[0];
+                txtValue = salon.textContent || salon.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    salons[i].style.display = '';
+                } else {
+                    salons[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+    <footer>
+        <div class="social-icons">
+            <p><b>FOLLOW US ON</b></p><br>
+            <p><b> Heavenly@gmail.com </b></p><br>
+            <a href="#" class="icon instagram"></a>
+            <a href="#" class="icon twitter"></a>
+            <a href="#" class="icon facebook"></a>
+        </div>
+    </footer>
+    
+    
+   
+</body>
+</html>

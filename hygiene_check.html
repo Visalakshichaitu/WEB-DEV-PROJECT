@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hygiene Check | Heavenly</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-image: url('https://i.pinimg.com/564x/81/81/84/818184967bf1a67e3497015c86de310d.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #1a73e8;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    section li {
+      flex: 0 1 200px; 
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section li:hover {
+      transform: translateY(-5px); 
+    }
+
+    section li img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      margin-top: 20px; 
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section li img:hover {
+      transform: scale(1.1);
+    }
+
+    section p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .accordion-title {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #e0e0e0; 
+      color: #333;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .accordion-title:hover {
+      background-color: #ccc; 
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+    }
+
+    .accordion-content.active {
+      max-height: 500px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><b>Our Commitment to Hygiene</b></h1>
+  </header>
+
+  <section id="measures">
+    <h2>Hygiene Measures We Take</h2>
+    <p>We understand the importance of keeping our work environment and tools clean to ensure the safety and well-being of both our technicians and our clients.</p>
+    <ul>
+      <li>
+        <img src="https://drniveasdentalcare.com/wp-content/uploads/2019/01/medical_shop_5.jpg" alt="gloves">
+        <p>Our technicians wear gloves for all client interactions.</p>
+      </li>
+      <li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9BRqtkqkdhRF__CIBvGYXyEBSsaKKuR7frQ&s" alt="disinfectant spray">
+        <p>We disinfect tools and equipment thoroughly after every job.</p>
+      </li>
+      <li>
+        <img src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/home-improvement/wp-content/uploads/2023/05/person-cleaning-blue-carpet.jpeg-e1683634052108.jpg" alt="foot covers">
+        <p>Technicians wear shoe covers before entering client premises.</p>
+      </li>
+      <li>
+        <img src="https://cen.acs.org/content/dam/cen/98/12/WEB/09812-feature2-sanitizer.jpg" alt="hand sanitizer">
+        <p>Hand sanitizer is readily available for technicians to use frequently.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="benefits">
+    <h2>Benefits of Our Hygiene Practices</h2>
+    <p><b>By prioritizing hygiene, we offer:</b></p>
+    <ul>
+      <li>Reduced risk of contamination across all services</li>
+      <li>Safe and healthy work environment for our technicians</li>
+      <li>Peace of mind for our valued clients</li>
+    </ul>
+  </section>
+
+  <section id="services">
+    <h2>Our Diverse Services</h2>
+    <ul class="accordion">
+      <li>
+        <h3 class="accordion-title"><img src="https://i.pinimg.com/236x/26/a4/ec/26a4eccf84b7b6bac18e05ded1381cf6.jpg">  </h3>
+        <div class="accordion-content">
+          <p>We offer a comprehensive range of plumbing services, including...</p>
+          <ul>
+            <li>Leak repairs</li>
+            <li>Drain cleaning</li>
+            <li>Fixture installation</li>
+          </ul>
+        </div>
+      </li>
+    
+      <li>
+        <h3 class="accordion-title"><img src="https://i.pinimg.com/236x/92/ca/c0/92cac0fd91ce89db58aa52f9f2a0c81b.jpg"></h3>
+        <div class="accordion-content">
+          <p>Our experienced carpenters can assist you with various projects, including...</p>
+          <ul>
+            <li>Custom furniture building</li>
+            <li>Door and window installation</li>
+            <li>Cabinet repairs</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <h3 class="accordion-title"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbTbS3mFVdmNEQ-H0_0AA2fHu91Qm4YQOZYpc56GB55Q&s"></h3>
+        <div class="accordion-content">
+          <p>Relax and rejuvenate at our salon. We offer a variety of services for men and women, including...</p>
+          <ul>
+            <li>Haircuts and styling</li>
+            <li>Hair coloring and treatments</li>
+            <li>Facials and massages</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <h3 class="accordion-title"><img src="https://i.pinimg.com/564x/98/ba/d5/98bad552b886de51ed1d9d51af43cbb6.jpg"></h3> 
+        <div class="accordion-content">
+          <p>Our barbers are skilled in providing a variety of men's haircuts, including...</p>
+          <ul>
+            <li>Fades</li>
+            <li>Buzz cuts</li>
+            <li>Pompadours</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      const listItems = document.querySelectorAll('section li');
+      listItems.forEach(listItem => listItem.classList.add('loaded'));
+      listItems.forEach(listItem => {
+        listItem.addEventListener('mouseenter', function() {
+          listItem.classList.add('hover');
+        });
+
+        listItem.addEventListener('mouseleave', function() {
+          listItem.classList.remove('hover');
+        });
+      });
+    });
+  </script>
+
+  <script>
+   const accordionTitles = document.querySelectorAll('.accordion-title');
+
+accordionTitles.forEach(title => {
+  title.addEventListener('click', function() {
+    const content = this.nextElementSibling;
+    content.classList.toggle('active');
+    const siblings = this.parentNode.parentNode.querySelectorAll('.accordion-content');
+    siblings.forEach(sibling => {
+      if (sibling !== content && sibling.classList.contains('active')) {
+        sibling.classList.remove('active');
+      }
+    });
+  });
+});
+
+  </script>
+</body>
+</html>
